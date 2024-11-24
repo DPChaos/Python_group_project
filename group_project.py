@@ -3,7 +3,7 @@ import sys
 
 #call functions stored within files in the current working directory's path
 from Math_Operator_File import Math_op_Lesson
-from List_Lesson_File import list_lessons
+from List_Lesson_File import List_Lessons
 from Loop_Lesson_File import Loops_Lesson
 
 #initialize start page
