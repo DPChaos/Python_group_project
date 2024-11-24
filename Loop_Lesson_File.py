@@ -1,5 +1,4 @@
 def Loops_Lesson():
-    def Math_op_Lesson():
     math_user_inp=int(input("Pick from these options:\n 1:addition \n 2:subtraction \n 3:multiplication \n 4:division \n 5:modulus\n 6:exponential\n option: "))
     if math_user_inp == 1:
         print("\nAddition in python utilizes the + operator to  add")
@@ -14,12 +13,13 @@ def Loops_Lesson():
             elif addition_equation == 15:
                 print("\nWell done, you have succesfully understood how the addition operator is used!!")
                 lesson_learned_option=int(input("\nPick from these options:\n 1:Learn more about the math operators,\n 2:go to the home page,\n 3:Exit the application"))
-                if lesson_learned_option == 1:
+                learned_option(lesson_learned_option)
+                '''if lesson_learned_option == 1:
                     Math_op_Lesson()
                 elif lesson_learned_option == 2:
                     home_page()
                 elif lesson_learned_option == 3:
-                    sys.exit()
+                    sys.exit()'''
     
     elif math_user_inp == 2:
         print("\nSubtraction in python utilizes the - operator to subtract")
@@ -116,6 +116,14 @@ def Loops_Lesson():
                 print("\nWell done, you have succesfully understood how the exponential operator is used!!")
                 lesson_learned_option=int(input("\nPick from these options:\n 1:Learn more about the math operators,\n 2:go to the home page,\n 3:Exit the application"))
                 if lesson_learned_option == 1:
+                    Math_op_Lesson()
+                elif lesson_learned_option == 2:
+                    home_page()
+                elif lesson_learned_option == 3:
+                    sys.exit()
+
+def learned_option(lesson_learned_option):
+    if lesson_learned_option == 1:
                     Math_op_Lesson()
                 elif lesson_learned_option == 2:
                     home_page()
